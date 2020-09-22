@@ -1,0 +1,9 @@
+1. Payloads processing in Burp Intruder.
+2. Microsoft Excel.
+3. import base64
+
+strings = open("/path/file.txt", "rb").readlines()
+
+for string in strings:
+    print(base64.decodebytes(string).decode())
+4. Cluster Bomb in Burp Intruder.
