@@ -1,0 +1,19 @@
+Script for turbo intruder
+
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=5,
+                           requestsPerConnection=2,
+                           pipeline=False
+                           )
+
+    for word in open('/path/file.txt'):
+        engine.queue(target.req, word.rstrip())
+
+
+def handleResponse(req, interesting):
+    # currently available attributes are req.status, req.wordcount, req.length and req.response
+    if req.status == 403:
+           engine.queue(target.req, word.rstrip())
+    else:
+       table.add(req)
