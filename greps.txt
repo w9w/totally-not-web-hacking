@@ -1,5 +1,5 @@
 grep for ffuf results filtering:
-\[Status: 403,(.*?)\]\n(.*?)\n(.*?)\n
+\[Status: 403,(.*?)\]\n(.*?)\n(.*?)\n(.*?)\n
 
 js endpoints processing from a list of alive hosts:
 grep -oh "\"\/[a-zA-Z0-9_?&=/\-\#\.]*\"" | awk \x39{!/.css/ && !/.png/ && !/.jpg/ && !/.svg/ && !/.jpeg/ && !/.ico/ && !/.gif/ && !/.woff/ && !/.woff2/; gsub("\"","",$0); gsub("\\?$","",$0); gsub("/\$","",$0);  gsub("^","{}",$0); print $0}\x39 | sort -u
