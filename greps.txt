@@ -1,9 +1,12 @@
 grep for ffuf results filtering:
 \[Status: 403,(.*?)\]\n(.*?)\n(.*?)\n(.*?)\n
 
-js endpoints processing from a list of alive hosts:
-grep -oh "\"\/[a-zA-Z0-9_?&=/\-\#\.]*\"" | awk \x39{!/.css/ && !/.png/ && !/.jpg/ && !/.svg/ && !/.jpeg/ && !/.ico/ && !/.gif/ && !/.woff/ && !/.woff2/; gsub("\"","",$0); gsub("\\?$","",$0); gsub("/\$","",$0);  gsub("^","{}",$0); print $0}\x39 | sort -u
-
 
 ffuf unnecessary lines deleting:
 /'___\\(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n
+
+ffuf filtering 200s with n size:
+\[Status: 200, Size: 562[0-9][0-9],(.*?)\n(.*?)\n(.*?)\n\n
+
+js endpoints processing from a list of alive hosts:
+grep -oh "\"\/[a-zA-Z0-9_?&=/\-\#\.]*\"" | awk \x39{!/.css/ && !/.png/ && !/.jpg/ && !/.svg/ && !/.jpeg/ && !/.ico/ && !/.gif/ && !/.woff/ && !/.woff2/; gsub("\"","",$0); gsub("\\?$","",$0); gsub("/\$","",$0);  gsub("^","{}",$0); print $0}\x39 | sort -u
