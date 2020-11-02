@@ -12,6 +12,9 @@ ffuf filtering empty robots.txt:
 \[Status: 200, Size: 26(.*?)\n(.*?)/robots\.txt\n(.*?)\n\n
 
 
+WAYBACKMACHINE filtering invalid URLS to avoid some programs' exceptions:
+cat wayback.txt | grep -E "^htt(p|ps)://(.*)/"
+
 
 js endpoints processing from a list of alive hosts:
 grep -oh "\"\/[a-zA-Z0-9_?&=/\-\#\.]*\"" | awk \x39{!/.css/ && !/.png/ && !/.jpg/ && !/.svg/ && !/.jpeg/ && !/.ico/ && !/.gif/ && !/.woff/ && !/.woff2/; gsub("\"","",$0); gsub("\\?$","",$0); gsub("/\$","",$0);  gsub("^","{}",$0); print $0}\x39 | sort -u
