@@ -8,3 +8,8 @@ api_endpoints.txt -
 Now deleting lines containing + and &.
 
 \w\.(co|com|tw|com\.|co\.) - with heavy heart I decided to exclude lines containing domains, too. Mostly it's just garbage.
+
+
+For endpoints only:
+
+"/api/(v[0-9])|/api/|^/(v[0-9])/", "^/" and deletion of dupes gives api_endpoints.txt
