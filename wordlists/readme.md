@@ -4,4 +4,4 @@
 
 Now deleting lines containing + and &.
 
-\w\.(co|com|tw|com\.|co\.) - with heavy heart I decided to exclude lines containing domains, too.
+\w\.(co|com|tw|com\.|co\.) - with heavy heart I decided to exclude lines containing domains, too. Mostly it's just garbage.
