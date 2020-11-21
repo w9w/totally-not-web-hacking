@@ -1,1 +1,7 @@
-[A-z][0-9]^(v[1-2])|[0-9][A-z]
+[A-z][0-9]^(v[1-2])|[0-9][A-z] exludes lines with strings contain random chars like 8e77b3768b440a281c5101ca7941d5e0. They are most likely won't be found.
+
+\.js$|\.jpeg|\.jpg|\.svg|\.woff|\.woff2|\.html|\.css|\.php|\.png|\.gif excludes file extensions that are most likely won't be found at /api.
+
+Now deleting lines containing + and &.
+
+\w\.(co|com|tw|com\.|co\.) - with heavy heart I decided to exclude lines containing domains, too.
