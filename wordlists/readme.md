@@ -12,4 +12,4 @@ Now deleting lines containing + and &.
 
 For endpoints only:
 
-"/api/(v[0-9])|/api/|^/(v[0-9])/", "^/" and deletion of dupes gives api_endpoints.txt
+"/api/(v[0-9])|/api/|^/(v[0-9])/", "^/" and deletion of dupes gives api_endpoints.txt. Bruteforce with this list when you know for sure there is only 1 version of API, lets say, only /api/v2/ only valid.
