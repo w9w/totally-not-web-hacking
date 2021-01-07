@@ -1,0 +1,14 @@
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=40,
+                           requestsPerConnection=100
+                           )
+
+    usernames = open("/Users/max/intruder1.txt", "r").readlines()
+
+    for username in usernames:
+        engine.queue(target.req, username.rstrip())
+
+
+def handleResponse(req, interesting):
+    table.add(req)
