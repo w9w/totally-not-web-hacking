@@ -11,3 +11,4 @@ printf "$url"
 fi
 
 ## usage - cat all_subs.txt | ./wildcard_sorting.sh 301
+## fast usage - cat all_subs.txt | parallel -j100 "printf '{}' | ./wildcard_sorting.sh 301 | tee -a test13.txt"
