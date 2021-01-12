@@ -7,7 +7,7 @@ status_code=$(echo $url | httpx -x HEAD -status-code -silent -no-color | grep -o
 
 if [[ $status_code != $code ]]
 then
-printf "$url"
+printf "$url\n"
 fi
 
 ## usage - cat all_subs.txt | ./wildcard_sorting.sh 301
