@@ -735,6 +735,7 @@ gartner
 gatewaycomputers
 gatorade
 geico
+tesla
 geminisoundproducts
 generalcommunication
 generaldynamics
