@@ -7,7 +7,7 @@ ________________________________________________\n(.*)\n(.*?)\n(.*?)/'___\\(.*?)
 
 for automation:
 
-________|        /'___|       /\\ \\__|       \\ \\ ,_|        \\ \\ \\|         \\ \\_|          \\/_|       v1| :: Method| :: URL| :: Follow redirects| :: Calibration| :: Timeout| :: Threads| :: Matcher
+________|        /'___|       /\\ \\__|       \\ \\ ,_|        \\ \\ \\|         \\ \\_|          \\/_|       v1| :: Method| :: URL| :: Follow redirects| :: Calibration| :: Timeout| :: Threads| :: Matcher| :: Filter|    \* FUZZ:
 
 
 ffuf filtering 200s with n size:
