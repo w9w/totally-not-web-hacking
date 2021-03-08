@@ -3,7 +3,12 @@ grep for ffuf results filtering:
 
 
 ffuf unnecessary lines deleting:
-/'___\\(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n
+________________________________________________\n(.*)\n(.*?)\n(.*?)/'___\\(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n
+
+for automation:
+
+________|        /'___|       /\\ \\__|       \\ \\ ,_|        \\ \\ \\|         \\ \\_|          \\/_|       v1| :: Method| :: URL| :: Follow redirects| :: Calibration| :: Timeout| :: Threads| :: Matcher
+
 
 ffuf filtering 200s with n size:
 \[Status: 200, Size: 562[0-9][0-9],(.*?)\n(.*?)\n(.*?)\n\n
