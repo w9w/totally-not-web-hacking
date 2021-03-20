@@ -1,7 +1,5 @@
 wso.php
 simple-shell.php
-b374k.php
-c99.php
 r77.php
 0byt3m1n1.php
 alfa.php
@@ -104,7 +102,6 @@ punk-nopass.php
 punkholic.php
 pws.php
 qsd-backdoor.php
-r57.php
 robots.php
 rootshell.php
 ru24_post_sh.php
@@ -153,6 +150,30 @@ wpzr5qe.php
 gasskkcnqssetting.php
 kkcnqs-ini.php
 xGASSx.php
+IndoXploit2.php
+IndoXploit3.php
+b374k-3.2.3.php
+b374k.php
+Create b374k.php
+c99.php
+Create c99.php
+r57.php
+backdoor.php
+Code_breaker_ICA_wordpress_mass_password_changer.php
+DON_symlink_based_cpanel_cracker.php
+HTTP_authentication_brute-forcer.php
+HULK_ddoser_php_interface.php
+Mannu_Mass_WHM_exploiter.php
+Mannu_symlink_shell.php
+RR_CPanel_brute_forcer.php
+configuration_file_killer_symlink_based_shell.php
+ethicalnoob_indishell_php_shell_encrypter.php
+inx_root_server_mass_defacer.php
+root_devil_wp-joomla_scanner.php
+scorpion_shell_finder.php
+tester.php
+silent_poison.php
+hexashell.php
 fileskkcnqssetting.php
 kkcnqsini.php
 kkcnqssetting.php
