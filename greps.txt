@@ -3,7 +3,7 @@ grep for ffuf results filtering:
 
 ffuf filtering:
 
-cat ffuf_output.txt | jq ".results[] | [.status, .length ,.url, .redirectlocation] | @ csv"  | sed "s/\"//g" | sed "s/,/\t /g" | sed 's/\\//g'
+cat ffuf_output.txt | cat ffuf_results.txt | grep -E "\[Status:|\| URL"
 
 ffuf unnecessary lines deleting:
 ________________________________________________\n(.*)\n(.*?)\n(.*?)/'___\\(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n
