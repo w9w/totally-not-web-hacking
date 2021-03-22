@@ -1,6 +1,9 @@
 grep for ffuf results filtering:
 \[Status: 403,(.*?)\]\n(.*?)\n(.*?)\n(.*?)\n
 
+ffuf filtering:
+
+cat ffuf_output.txt | jq ".results[] | [.status, .length ,.url, .redirectlocation] | @ csv"  | sed "s/\"//g" | sed "s/,/\t /g" | sed 's/\\//g'
 
 ffuf unnecessary lines deleting:
 ________________________________________________\n(.*)\n(.*?)\n(.*?)/'___\\(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n(.*?)\n
