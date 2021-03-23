@@ -8,9 +8,11 @@
 
 
 **ffuf filtering 200s with n size:**
+
 ``\[Status: 200, Size: 562[0-9][0-9],(.*?)\n(.*?)\n(.*?)\n\n``
 
 **ffuf filtering empty robots.txt file:**
+
 ``\[Status: 200, Size: 26(.*?)\n(.*?)/robots\.txt\n(.*?)\n\n``
 
 
