@@ -1,12 +1,12 @@
 def queueRequests(target, wordlists):
     engine = RequestEngine(endpoint=target.endpoint,
-                           concurrentConnections=30,
-                           requestsPerConnection=100,
+                           concurrentConnections=5000,
+                           requestsPerConnection=5000,
                            pipeline=False
                            )
 
     # the 'gate' argument blocks the final byte of each request until openGate is invoked
-    for i in range(30):
+    for i in range(5000):
         engine.queue(target.req, i, gate='race1')
 
     # wait until every 'race1' tagged request is ready
