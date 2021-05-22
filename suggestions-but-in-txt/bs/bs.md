@@ -1,4 +1,4 @@
-#Burp suite suggestions:
+##Burp suite suggestions:
 
 1) Ever wondered what happens if you launch 5000 race conditions threads? I did so, and the results are surprising:
 If we consume this script https://github.com/w9w/totally-not-web-hacking/blob/master/turbo-intruder-scripts/default-race.py-but-with-params.txt to the turbo intruder, mark parameter insertion point, and click on launch; there will be a decent raise in RAM consumption by burp (I had ~1200%). When I launched an attack, every OS application started lagging heavily; at some time, I couldn't even use an apple native app for screenshots that I was thinking of using my phone's camera, and even music stopped playing. Since coolers started working with the loudness they never had, I started emergency shut down. If PC would have a heart, it could have a heart attack for sure 😅
