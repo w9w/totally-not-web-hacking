@@ -9,7 +9,7 @@
 
 **ffuf filtering 200s with n size:**
 
-``\[Status: 200, Size: 562[0-9][0-9],(.*?)\n(.*?)\n(.*?)\n\n``
+``\n(.*?)200, Size: 500(.*?)\n(.*?)\n(.*?)\n(.*?)``
 
 **ffuf filtering empty robots.txt file:**
 
