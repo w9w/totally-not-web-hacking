@@ -11,6 +11,8 @@
 
 ``\n(.*?)200, Size: 500(.*?)\n(.*?)\n(.*?)\n(.*?)``
 
+``\n(.*?)200, Size: 15[0-9][0-9][0-9], Words: 1838(.*?)\n(.*?)\n(.*?)\n(.*?)``
+
 **ffuf filtering empty robots.txt file:**
 
 ``\[Status: 200, Size: 26(.*?)\n(.*?)/robots\.txt\n(.*?)\n\n``
