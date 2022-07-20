@@ -1,6 +1,7 @@
 gmail.com
 yahoo.com
 hotmail.com
+hotmail.de
 protonmail.com
 inbox.com
 outlook.com
@@ -31,3 +32,4 @@ yahoo.es
 live.nl
 hey.com
 cock.li
+yahoo.it
