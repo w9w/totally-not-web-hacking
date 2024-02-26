@@ -67,6 +67,8 @@
 
 > site:docs.google.com inurl:"/d/" "example.com"
 
+> site:onecompiler.com "example.com"
+
 ### External
 
 // https://gist.github.com/search?q=example.com
