@@ -68,6 +68,8 @@
 > site:docs.google.com inurl:"/d/" "example.com"
 
 > site:onecompiler.com "example.com"
+> https://urlscan.io/search/#vercel.com*
+> https://hunter.io/try/search/gg.com OR https://rocketreach.co/person?employer%5B%5D=%22gg.com%22
 
 ### External
 
