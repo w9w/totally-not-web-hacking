@@ -1,0 +1,29 @@
+### Add a request to the turbo intruder, erase the request, enter %s.
+### Don't forget to change a path in a and b vars
+
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=2,
+                           requestsPerConnection=2,
+                           pipeline=False,
+                           engine=Engine.HTTP2
+                           )
+    a = open("/Users/max/intruder1.txt", "r")
+    b = open("/Users/max/intruder2.txt", "r")
+    # the 'gate' argument blocks the final byte of each request until openGate is invoked
+    for i in range(1):
+        engine.queue(target.req, a.read(), gate='race1')
+
+    for i in range(1):
+        engine.queue(target.req, b.read(), gate='race1')
+
+    # wait until every 'race1' tagged request is ready
+    # then send the final byte of each request
+    # (this method is non-blocking, just like queue)
+    engine.openGate('race1')
+
+    engine.complete(timeout=60)
+
+
+def handleResponse(req, interesting):
+    table.add(req)
