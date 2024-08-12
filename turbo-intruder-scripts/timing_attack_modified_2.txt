@@ -1,0 +1,11 @@
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=4,
+                           engine=Engine.BURP
+                           )
+    strings = ['1', '2', '3', '4']
+    for string in strings:
+        engine.queue(target.req, string, gate='race1')
+    engine.openGate('race1')
+def handleResponse(req, interesting):
+    table.add(req)
